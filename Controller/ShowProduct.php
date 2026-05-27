@@ -6,6 +6,7 @@ $showProduct = new showProduct();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Receives through an AJAX request the type of platform that the product is.
+    
     if (isset($_POST['getProductByPlataform'])) {
         $platform = $_POST['getProductByPlataform'];
         if ($platform != null) {
